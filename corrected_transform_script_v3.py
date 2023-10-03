@@ -53,7 +53,8 @@ def results_to_final_html(sorted_results):
         td.string = result['extra']['message']
         tr.append(td)
         td = soup.new_tag("td")
-        a_tag = soup.new_tag("a", href=result['extra']['metadata']['shortlink'])
+        shortlink = result['extra']['metadata'].get('shortlink', '#')
+        a_tag = soup.new_tag("a", href=shortlink)
         a_tag.string = "Link"
         td.append(a_tag)
         tr.append(td)
@@ -101,4 +102,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
