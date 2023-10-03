@@ -1,0 +1,12 @@
+This repo has split the rules into two broard categories:
+
+  1. `rules/` -- Rules useful for developers or AppSec teams, these are generally vulnerabilities.
+
+```bash
+git clone 
+```
+
+To test out the rules, run:
+
+```bash
+semgrep --config semgrep-rules/rules semgrep-rules/rules/

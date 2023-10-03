@@ -1,0 +1,11 @@
+rules:
+  - id: mybatis-sql-xml
+    patterns:
+      - pattern-not-regex: \${ew.customSqlSegment}
+      - pattern: |
+          <mapper ...>
+      - pattern-regex: \${.*}
+    message: Potential SQL Injection found. Avoid using ${} for SQL parameters. Use \#{}
+    languages:
+      - xml
+    severity: ERROR
