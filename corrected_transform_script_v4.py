@@ -73,7 +73,7 @@ def results_to_final_html(sorted_results):
 
     # Activate DataTables with the given display length
     script_tag = soup.new_tag("script")
-    script_tag.string = "$(document).ready(function() { $('#resultsTable').DataTable({ 'displayLength': 150 }); } );"
+    script_tag.string = "$(document).ready(function() { $('#resultsTable').DataTable({ 'displayLength': 1000 }); } );"
     body_tag.append(script_tag)
 
     return str(soup)

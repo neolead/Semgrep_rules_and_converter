@@ -18,7 +18,7 @@ OR with default rules, and output json: scan.json
 3.2 ```semgrep --config auto FULDEERR --no-force-color  --output scan.json --json --max-target-bytes 10240000 --scan-unknown-extensions   --timeout 90```
 
 4.1 Optional .. you can convert json to html page with sorting...
-python3 corrected_transform_script_v3.py scan_custom.json scan_custom.html
+python3 corrected_transform_script_v4.py scan_custom.json scan_custom.html
 And you got a nice-view report.
 
 ![image](https://github.com/neolead/Semgrep_rules_and_converter/assets/16626585/7167168d-bf60-4fa3-84f3-336a6c715f8b)
